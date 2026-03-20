@@ -1,0 +1,624 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'><style type='text/css'>html {overflow-x: initial !important;}</style>
+<style type='text/css'  id="style-base">:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.428571; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p *, #write.first-line-indent svg * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+svg sub, svg sup { position: static; }
+.nodeLabel p { padding-right: 2px; padding-left: 2px; }
+.typora-export .nodeLabel p { padding-right: 0px; padding-left: 0px; }
+foreignObject { overflow: visible; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+li p { orphans: 1; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; border-right-style: none; border-right-color: currentcolor; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: medium; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; border-bottom-style: none; border-bottom-color: currentcolor; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: medium; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left-width: 0.25em; border-left-style: solid; border-left-color: rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+</style>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&amp;subset=latin,latin-ext' type='text/css' />
+<style type='text/css'  id="style-theme_css">:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', 'SF Pro', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.mac-os #write{
+    caret-color: AccentColor;
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+</style>
+<style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
+<style type='text/css'  id="style-mac-print"> @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}</style>
+
+<title>guion_preparar_clase_invertida</title>
+</head>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='instrucciones-para-la-preparación-de-una-clase-sobre-ámbitos-de-gestión-sectorial-de-ecosistemas'><span>Instrucciones para la preparación de una clase sobre ámbitos de gestión sectorial de ecosistemas</span></h1><blockquote><ul><li><p><strong><em><span>Tipo de material</span></em></strong><span>: </span><span style="display: inline-block; font-size: 12px; color: white; background-color: #8D26F5; border-radius: 5px; padding: 5px; font-weight: bold;"><span> Tarea</span></span></p></li><li><p><strong><em><span>Versión</span></em></strong><span>: 2025-2026</span></p></li><li><p><strong><em><span>Asignatura (grado)</span></em></strong><span>: Gestión de ecosistemas (CCAA)</span></p></li><li><p><strong><em><span>Autor</span></em></strong><span>: Curro Bonet-García (fjbonet@uco.es)</span></p></li><li><p><strong><span>Duración</span></strong><span>: Estimo que uns 2 de trabajo individual y otras 2 en grupo. </span></p></li></ul></blockquote><p><img src="https://github.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/2025_2026/imagenes/portada.png" alt="portada"></p><hr /><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n349"><a class="md-toc-inner" style="cursor: pointer;" href="#instrucciones-para-la-preparación-de-una-clase-sobre-ámbitos-de-gestión-sectorial-de-ecosistemas">Instrucciones para la preparación de una clase sobre ámbitos de gestión sectorial de ecosistemas</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n368"><a class="md-toc-inner" style="cursor: pointer;" href="#1-objetivos">1 Objetivos </a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n383"><a class="md-toc-inner" style="cursor: pointer;" href="#2-formulación-del-ejercicio">2 Formulación del ejercicio</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n399"><a class="md-toc-inner" style="cursor: pointer;" href="#21-objetivos-de-aprendizaje">2.1 Objetivos de aprendizaje</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n401"><a class="md-toc-inner" style="cursor: pointer;" href="#22-definición-y-objetivos-del-ámbito-de-gestión-con-el-que-estamos-trabajando">2.2 Definición y objetivos del ámbito de gestión con el que estamos trabajando</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n403"><a class="md-toc-inner" style="cursor: pointer;" href="#23-fundamentos-científicos-que-sustentan-en-la-actualidad-las-herramientas-de-gestión-en-el-ámbito-estudiado">2.3 Fundamentos científicos que sustentan en la actualidad las herramientas de gestión en el ámbito estudiado</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n405"><a class="md-toc-inner" style="cursor: pointer;" href="#24-métodos-y-técnicas-usadas-actualmente-en-el-ámbito-temático-asignado">2.4 Métodos y técnicas usadas actualmente en el ámbito temático asignado</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n407"><a class="md-toc-inner" style="cursor: pointer;" href="#25-breve-historia-del-ámbito-de-gestión-en-cuestión">2.5 Breve historia del ámbito de gestión en cuestión.</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n409"><a class="md-toc-inner" style="cursor: pointer;" href="#26-marco-legal-en-europa-españa-y-andalucía">2.6 Marco legal en Europa, España y Andalucía</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n411"><a class="md-toc-inner" style="cursor: pointer;" href="#27-ejemplos-relevantes-en-nuestro-entorno">2.7 Ejemplos relevantes en nuestro entorno</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n413"><a class="md-toc-inner" style="cursor: pointer;" href="#28-retos-relevantes-que-tenga-el-ámbito-de-gestión-asignado">2.8 Retos relevantes que tenga el ámbito de gestión asignado</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n415"><a class="md-toc-inner" style="cursor: pointer;" href="#3-metodología-de-trabajo-y-planteamiento-pedagógico">3 Metodología de trabajo y planteamiento pedagógico</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n417"><a class="md-toc-inner" style="cursor: pointer;" href="#31-trabajo-individual">3.1 Trabajo individual</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n419"><a class="md-toc-inner" style="cursor: pointer;" href="#311-conversación-con-ias-para-recopilar-información-sobre-cada-ámbito-de-gestión">3.1.1 Conversación con IAs para recopilar información sobre cada ámbito de gestión</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n430"><a class="md-toc-inner" style="cursor: pointer;" href="#312-interacción-con-ias-contenerizadas-para-afinar-la-información-sobre-eje-analítico">3.1.2 Interacción con IAs "contenerizadas" para afinar la información sobre eje analítico</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n435"><a class="md-toc-inner" style="cursor: pointer;" href="#32-trabajo-en-grupo">3.2 Trabajo en grupo</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n439"><a class="md-toc-inner" style="cursor: pointer;" href="#321-creación-de-un-guión-para-crear-la-presentación">3.2.1 Creación de un guión para crear la presentación</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n443"><a class="md-toc-inner" style="cursor: pointer;" href="#322-creación-de-la-presentación">3.2.2 Creación de la presentación</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n446"><a class="md-toc-inner" style="cursor: pointer;" href="#4-qué-hay-que-entregar-cómo-y-cuándo">4 Qué hay que entregar, cómo y cuándo</a></span></p></div><hr /><p>&nbsp;</p><h2 id='1-objetivos'><span>1 Objetivos </span></h2><p><span>La finalidad última de este guión es suministrar unas instrucciones para completar la tarea de preparar e impartir una clase sobre distintos ámbitos de gestión ecosistémica (caza, gestión forestal, etc.)</span></p><p><span>Desde un punto de vista docente, conseguir esa finalidad implica lograr también los siguientes objetivos de aprendizaje:</span></p><ul><li><p><span>Mejorar el manejo de las herramientas IA como copilotos del aprendizaje profundo.</span></p></li><li><p><span>Adquirir conocimiento sobre un ámbito concreto de gestión de ecosistemas.</span></p></li><li><p><span>Mejorar las capacidades de trabajo en equipo.</span></p></li><li><p><span>Entrenar la expresión oral de ideas complejas. </span></p></li><li><p><span>Establecer relaciones entre el aprendizaje adquirido por los distintos grupos de la clase.</span></p></li></ul><p>&nbsp;</p><h2 id='2-formulación-del-ejercicio'><span>2 Formulación del ejercicio</span></h2><p><span>Cada uno de los grupos tendrá que preparar una clase sobre un ámbito de gestión concreto. Las asignaciones son las siguientes:</span></p><ul><li><p><span>Gestión de especies amenazadas -&gt; Grupo 3.</span></p></li><li><p><span>Manejo de especies invasoras -&gt; Grupo 1</span></p></li><li><p><span>Gestión forestal -&gt; Grupo 4</span></p></li><li><p><span>Gestión cinegética -&gt; Grupo 2</span></p></li><li><p><span>Espacios Naturales Protegidos -&gt; Grupo 5</span></p></li></ul><p><span>Esta actividad se encuadra en el bloque de la asignatura que hemos denominado &quot;técnicas o métodos usados actualmente en la gestión de ecosistemas&quot;. La idea es que los estudiantes aprendan sobre el ámbito de gestión que se les ha asignado y que resuman los conocimientos adquiridos ante sus compañeros. </span></p><p><span>Como la idea es describir las técnicas y métodos que utilizamos para gestionar ciertos componentes o compartimentos de los socioecosistemas, os propongo que todas las clases tengan una estructura similar. Es decir, analizaremos los distintos compartimentos (gestión de especies amenazadas, manejo de invasoras, etc.) bajo el mismo marco conceptual. Esto quiere decir que todas las clases deberán de incidir en los siguientes ejes analíticos:</span></p><h3 id='21-objetivos-de-aprendizaje'><span>2.1 Objetivos de aprendizaje</span></h3><p><span>Esta sección introductoria deberá de explicitar qué pretendemos que aprendan nuestros alumnos con esta sesión. Estos objetivos de aprendizaje deberán ser un subconjunto de las cosas que el grupo haya aprendido preparando el tema en cuestión. Esta sección se suele preparar al final de todo el proceso porque para elaborarla es necesario completar los siguientes pasos. Aunque suene contradictorio, se prepara al final y se explica en primer lugar cuando se exponga el tema a la clase.</span></p><h3 id='22-definición-y-objetivos-del-ámbito-de-gestión-con-el-que-estamos-trabajando'><span>2.2 Definición y objetivos del ámbito de gestión con el que estamos trabajando</span></h3><p><span>Esta segunda sección se conecta con el propósito del ámbito de gestión que estamos estudiando. Los estudiantes que preparen cada tema deberán de cuestionarse por la razón de ser del mismo. Por ejemplo, ¿qué sentido tiene gestionar las especies amenazadas?. Identificar claramente los propósitos de gestión es muy importante para darle sentido al aprendizaje.</span></p><h3 id='23-fundamentos-científicos-que-sustentan-en-la-actualidad-las-herramientas-de-gestión-en-el-ámbito-estudiado'><span>2.3 Fundamentos científicos que sustentan en la actualidad las herramientas de gestión en el ámbito estudiado</span></h3><p><span>Como podréis observar, vamos aterrizando poco a poco en las técnicas y métodos de manejo. En este bloque, los estudiantes deberán de analizar los fundamentos teóricos (ecológicos y de otras disciplinas) que sustentan los métodos de gestión que se aplican para el ámbito estudiado. Por ejemplo, para la gestión de pesquerías (este tema lo explicaré yo en clase) los fundamentos teóricos residen en la teoría de explotación de poblaciones ecológicas (lo vimos </span><a href='https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_explotacion_ecologia_ccaa/2025_2026/guion_explotacion_poblaciones.html'><span>aquí</span></a><span> en ecología). En esta sección se deberán describir estas teorías y marcos conceptuales con detalle. Es recomendable hacer mención a los temas ya vistos en la asignatura de ecología.</span></p><h3 id='24-métodos-y-técnicas-usadas-actualmente-en-el-ámbito-temático-asignado'><span>2.4 Métodos y técnicas usadas actualmente en el ámbito temático asignado</span></h3><p><span>En paralelo a la descripción de los marcos conceptuales teóricos, irán surgiendo métodos y aproximaciones de gestión que se ponen en marcha en la actualidad para gestionar el tipo de recurso asignado. Así, por ejemplo, en el manejo de pesquerías, es muy común aplicar la metodología del </span><em><span>Rendimiento máximo sostenible</span></em><span> (esto también lo vimos en ecología). Pues bien, la idea es que identifiquéis los métodos más comúnmente utilizados para el ámbito temático que os haya tocado.</span></p><h3 id='25-breve-historia-del-ámbito-de-gestión-en-cuestión'><span>2.5 Breve historia del ámbito de gestión en cuestión.</span></h3><p><span>Esta sección puede parecer un poco particular. ¿Qué sentido tiene estudiar cómo han evolucionado las técnicas de manejo de la caza, por ejemplo?. Como veremos a lo largo de la asignatura, conocer la historia de un proceso nos da mucha información sobre cómo funciona en la actualidad. Además, estudiar cómo ha evolucionado un ámbito de gestión con el tiempo también nos da pistas sobre cómo aprendemos nosotros sobre ese ámbito. Es muy probable que nuestras ideas previas sobre cómo se gestiona, por ejemplo, la caza, se parezcan bastante a cómo nuestros ancestros gestionaban ese recurso. </span></p><h3 id='26-marco-legal-en-europa-españa-y-andalucía'><span>2.6 Marco legal en Europa, España y Andalucía</span></h3><p><span>La legislación es un elemento clave a la hora de estudiar cualquier ámbito de gestión de ecosistemas. Es en la legislación en la que se plasman las directrices y métodos de manejo. Es necesario hacer una breve revisión sobre las principales disposiciones legales que constituyen el cuerpo de conocimiento que tenemos sobre el ámbito de gestión asignado.</span></p><h3 id='27-ejemplos-relevantes-en-nuestro-entorno'><span>2.7 Ejemplos relevantes en nuestro entorno</span></h3><p><span>En esta ocasión se trata de identificar ejemplos sobre la gestión del ámbito temático asignado que resulten cercanos a nuestra escala de trabajo. La idea es describir estos ejemplos a la luz de lo aprendido anteriormente. Por ejemplo, si estamos estudiando la gestión de pesquerías, pues un buen ejemplo sería contar cómo funciona la flota pesquera de Andalucía y qué ejemplos de gestión (buena y mala) se ponen en práctica.</span></p><h3 id='28-retos-relevantes-que-tenga-el-ámbito-de-gestión-asignado'><span>2.8 Retos relevantes que tenga el ámbito de gestión asignado</span></h3><p><span>Esta última dimensión pretende que los estudiantes reflexionen sobre lo aprendido y propongan retos a los que se enfrenta la metodología que han trabajado. Por ejemplo, podemos preguntarnos el papel que puede jugar el cambio climático en la gestión cinegética o tratar de identificar las carencias de informacion científica que tenemos para &quot;resolver&quot; el problema de las especies invasoras.</span></p><h2 id='3-metodología-de-trabajo-y-planteamiento-pedagógico'><span>3 Metodología de trabajo y planteamiento pedagógico</span></h2><p><span>Este ejercicio tiene varias fases que combinan el trabajo individual con el grupal. Consta de varias fases en las que también se combinan distintas técnicas pedagógicas para maximizar el aprendizaje:</span></p><h3 id='31-trabajo-individual'><span>3.1 Trabajo individual</span></h3><p><span>Cada miembro del equipo tendrá que trabajar de manera individual abordando todos los ámbitos temáticos descritos en la sección anterior para el tema que le haya tocado. Para ello trabajará usando herramientas IA y literatura científica. Cada uno podrá usar el método que mejor considere. No obstante, yo os propongo la siguiente aproximación:</span></p><h4 id='311-conversación-con-ias-para-recopilar-información-sobre-cada-ámbito-de-gestión'><span>3.1.1 Conversación con IAs para recopilar información sobre cada ámbito de gestión</span></h4><p><span>Sugiero usar la opción </span><em><span>aprender paso a paso</span></em><span> de Gemini o la opción </span><em><span>Deep research</span></em><span> de Perplexity para aprender sobre el tema en cuestión. Recordad que en la interacción con las IAs es clave elaborar las preguntas que se hacen. No basta con pedir que genere contenido. Se trata de interactuar con la herramienta de forma que sus respuestas promuevan el aprendizaje. En la conversación con la IA se deben usar los elementos de interés descritos en la sección anterior (puntos 2.1 a 2.8). Pongo </span><a href='https://aprendiendo-cosas.github.io/competencias_transversales/normas_IA/normas_IA.html'><span>aquí</span></a><span> de nuevo el enlace a las normas de uso de IAs que ya trabajamos en el cuatrimestre pasado. </span></p><p><span>Las respuestas que vayan dando la IA deberán de ser cuestionadas por cada alumno individual. Sugiero proceder de dos maneras:</span></p><ul><li><p><span>Las fuentes de datos que aporte la IA deben de ser descargados y almacenados en una carpeta del OneDrive que comparte cada alumno en su grupo.</span></p></li><li><p><span>También recomiendo que se suban las fuentes de datos relevantes a un cuaderno de Notebook LM.</span></p></li><li><p><span>Además, sugiero que se cree un mapa mental o un documento en el que se vaya anotando la información que cada estudiante considere relevante. </span></p></li></ul><h4 id='312-interacción-con-ias-contenerizadas-para-afinar-la-información-sobre-eje-analítico'><span>3.1.2 Interacción con IAs &quot;contenerizadas&quot; para afinar la información sobre eje analítico</span></h4><p><span>Una vez finalizada la primera fase de recopilación de información y aprendizaje general, sugiero que interactuéis con el Notebook que habéis creado antes para recopilar información más detallada sobre los distintos elementos de interés asociados al tema asignado. Es importante que guardéis como </span><em><span>nota</span></em><span> las respuestas que vaya dando el Notebook y que consideréis interesantes. Además, debéis seguir enriqueciendo el mapa mental o el documento de texto con las respuestas que dé el Notebook.</span></p><p><span>Al final de esta fase individual, cada estudiante debe de tener en su cabeza (y en un mapa mental o un documento de texto) una idea bastante clara de cómo se gestiona el compartimento que se le haya asignado. </span></p><p><span>Esta primera etapa combina la técnica de la clase invertida (porque el estudiante prepara material que tendrá que exponer más tarde) con el aprendizaje autorregulado apoyado por IA como &quot;copiloto&quot;. El hecho de que haya unos ejes analíticos que orientan la búsqueda de material por parte del estudiante se enmarca en la técnica docente del andamiaje cognitivo.</span></p><p><span>Además, esta primera etapa está muy relacionada con la adquisición de habilidades de autoaprendizaje. Se trata, en definitiva, de aprender sobre algo casi totalmente nuevo en bastante poco tiempo. Para ayudar a los estudiantes a enfrentarse al &quot;folio en blanco&quot;, he preparado este guión sobre cómo aprender en tiempos de la IA. El guión contiene un vídeo que muestra cómo aplicar el método propuesto a preparar una clase sobre gestión de pesquerías.</span></p><h3 id='32-trabajo-en-grupo'><span>3.2 Trabajo en grupo</span></h3><p><span>Una vez que cada estudiante haya aprendido por sí mismo o misma los aspectos más relevantes del tema asignado, llega el momento de unificar saberes para generar una presentación compartida. Este es el objetivo de la fase de trabajo en grupo.</span></p><p><span>La clase que tendrá que impartir el grupo deberá durar un máximo de 40&#39;. Para hacer la presentación, el grupo tendrá que utilizar una presentación de diapositivas generada a través de una IA (a continuación se muestran detalles). Todos los miembros del equipo tendrán que manejar toda la presentación. Será el profesor el que irá dando voz a los distintos miembros del equipo para que hablen sobre distintas cuestiones de su trabajo.</span></p><p><span>Para generar esta presentación, sugiero proceder de la siguiente forma:</span></p><h4 id='321-creación-de-un-guión-para-crear-la-presentación'><span>3.2.1 Creación de un guión para crear la presentación</span></h4><p><span>En una reunión presencial o virtual, los miembros del equipo deberán de preparar un guión para hacer la presentación. Sería interesante que previamente hubieran compartido entre todos los materiales preparados individualmente. </span></p><p><span>Esta actividad es mucho más profunda que la mera preparación de una presentación. Requiere un esfuerzo de síntesis alto ya que se trata de preparar unas instrucciones precisas para que una IA prepare una presentación. Además, deberá de ser un trabajo colaborativo en el que el grupo tendrá que conciliar las mejores contribuciones de cada uno de sus integrantes.</span></p><p><span>A modo de ejemplo, comparto a continuación el guión que yo preparé para crear una presentación sobre gestión de pesquerías. Este material también está disponible en el guión mencionado anteriormente sobre &quot;aprender en tiempos de IAs&quot;</span></p><h4 id='322-creación-de-la-presentación'><span>3.2.2 Creación de la presentación</span></h4><p><span>Una vez que el grupo tenga un guión detallado sobre el contenido de cada presentación, se subirá el texto resultante a un Notebook LM y se le pedirá a la IA que genere una presentación con esta fuente.</span></p><p><span>El resultado obtenido puede ser modificado diapositiva a diapositiva con el editor que provee Notebook LM. También es posible usar otras herramientas IA para modificar las diapositivas o para crearlas. </span></p><h2 id='4-qué-hay-que-entregar-cómo-y-cuándo'><span>4 Qué hay que entregar, cómo y cuándo</span></h2><p><span>Cada estudiante individual tendrá que entregar lo siguiente:</span></p><ul><li><p><span>Un documento que contenga lo siguiente. Enviadlo por correo, por favor:</span></p><ul><li><p><span>Resumen de la información que haya considerado valiosa en su trabajo con las IAs y con información científica. Este documento no tiene que estar bien maquetado. Es un documento de trabajo y así tiene que ser.</span></p></li><li><p><span>Lista de todos los enlaces a conversaciones con IA que haya usado, así como direcciones de webs consultadas.</span></p></li></ul></li></ul><ul><li><p><span>Además, debe de compartir conmigo el Notebook LM que haya usado para subir todas las fuentes relevantes. Para que yo pueda ver todas las conversaciones, es importante que le des al botón de &quot;convertir en nota&quot; a las conversaciones que consideres relevantes. También os pido que pongáis vuestro nombre al principio del nombre del Notebook LM. Así podré identificaros. Compartid el Notebook con mi correo de gmail: </span><a href='mailto:fjbonet@gmail.com' target='_blank' class='url'>fjbonet@gmail.com</a></p></li></ul><p><span>Cada grupo deberá de entregar a través del grupo de Teams lo siguiente:</span></p><ul><li><p><span>Documento que contenga las instrucciones dadas a la IA para que genere la presentación.</span></p></li><li><p><span>Presentación usada en la exposición en clase.</span></p></li></ul><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><hr /><p><a href='https://github.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/archive/refs/tags/2025_2026.zip'><span>Aquí</span></a><span> puedes descargar un archivo .zip que contiene este guión en formato html y todo el material que incluye.</span></p><hr /><p><span>Haz click </span><a href='https://github.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/releases'><span>aquí</span></a><span> para ver cómo ha cambiado este guión en los distintos cursos académicos.</span></p><hr /> <p xmlns:cc="http://creativecommons.org/ns#" >El contenido de este repositorio se puede utilizar bajo la siguiente licencia:  <a  href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"  target="_blank" rel="license noopener noreferrer"  style="display:inline-block;">CC BY-NC-SA 4.0<img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"  alt=""><img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"  alt=""><img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"  alt=""><img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"  alt=""></a></p> <p>Esta licencia no aplica a enlaces a artículos, libros o imágenes no originales. Estos productos tienen su licencia correspondiente.</p></div></div>
+</body>
+</html>

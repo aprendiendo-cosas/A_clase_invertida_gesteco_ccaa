@@ -6,10 +6,8 @@
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
 > + **Duración**: Estimo que uns 2 de trabajo individual y otras 2 en grupo. 
 
-![portada](https://github.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/blob/main/imagenes/portada.png?raw=true)
+![portada](https://github.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/2025_2026/imagenes/portada.png)
 
-
-https://raw.githubusercontent.com/aprendiendo-cosas/C_geslocal_gesteco/2022_2023/images/almocita.jpg
 ---
 
 [TOC]
@@ -76,7 +74,7 @@ Este ejercicio tiene varias fases que combinan el trabajo individual con el grup
 ### 3.1 Trabajo individual
 Cada miembro del equipo tendrá que trabajar de manera individual abordando todos los ámbitos temáticos descritos en la sección anterior para el tema que le haya tocado. Para ello trabajará usando herramientas IA y literatura científica. Cada uno podrá usar el método que mejor considere. No obstante, yo os propongo la siguiente aproximación:
 
-#### 3.1.1 Conversación con IAs para recopilar información sobre cada ámbito temático
+#### 3.1.1 Conversación con IAs para recopilar información sobre cada ámbito de gestión
 Sugiero usar la opción *aprender paso a paso* de Gemini o la opción *Deep research* de Perplexity para aprender sobre el tema en cuestión. Recordad que en la interacción con las IAs es clave elaborar las preguntas que se hacen. No basta con pedir que genere contenido. Se trata de interactuar con la herramienta de forma que sus respuestas promuevan el aprendizaje. En la conversación con la IA se deben usar los elementos de interés descritos en la sección anterior (puntos 2.1 a 2.8). Pongo [aquí](https://aprendiendo-cosas.github.io/competencias_transversales/normas_IA/normas_IA.html) de nuevo el enlace a las normas de uso de IAs que ya trabajamos en el cuatrimestre pasado. 
 
 Las respuestas que vayan dando la IA deberán de ser cuestionadas por cada alumno individual. Sugiero proceder de dos maneras:
@@ -84,18 +82,56 @@ Las respuestas que vayan dando la IA deberán de ser cuestionadas por cada alumn
 + También recomiendo que se suban las fuentes de datos relevantes a un cuaderno de Notebook LM.
 + Además, sugiero que se cree un mapa mental o un documento en el que se vaya anotando la información que cada estudiante considere relevante. 
 
+
+#### 3.1.2 Interacción con IAs "contenerizadas" para afinar la información sobre eje analítico
 Una vez finalizada la primera fase de recopilación de información y aprendizaje general, sugiero que interactuéis con el Notebook que habéis creado antes para recopilar información más detallada sobre los distintos elementos de interés asociados al tema asignado. Es importante que guardéis como *nota* las respuestas que vaya dando el Notebook y que consideréis interesantes. Además, debéis seguir enriqueciendo el mapa mental o el documento de texto con las respuestas que dé el Notebook.
 
 Al final de esta fase individual, cada estudiante debe de tener en su cabeza (y en un mapa mental o un documento de texto) una idea bastante clara de cómo se gestiona el compartimento que se le haya asignado. 
 
 Esta primera etapa combina la técnica de la clase invertida (porque el estudiante prepara material que tendrá que exponer más tarde) con el aprendizaje autorregulado apoyado por IA como "copiloto". El hecho de que haya unos ejes analíticos que orientan la búsqueda de material por parte del estudiante se enmarca en la técnica docente del andamiaje cognitivo.
 
+Además, esta primera etapa está muy relacionada con la adquisición de habilidades de autoaprendizaje. Se trata, en definitiva, de aprender sobre algo casi totalmente nuevo en bastante poco tiempo. Para ayudar a los estudiantes a enfrentarse al "folio en blanco", he preparado este guión sobre cómo aprender en tiempos de la IA. El guión contiene un vídeo que muestra cómo aplicar el método propuesto a preparar una clase sobre gestión de pesquerías.
+
+### 3.2 Trabajo en grupo
+Una vez que cada estudiante haya aprendido por sí mismo o misma los aspectos más relevantes del tema asignado, llega el momento de unificar saberes para generar una presentación compartida. Este es el objetivo de la fase de trabajo en grupo.
+
+La clase que tendrá que impartir el grupo deberá durar un máximo de 40'. Para hacer la presentación, el grupo tendrá que utilizar una presentación de diapositivas generada a través de una IA (a continuación se muestran detalles). Todos los miembros del equipo tendrán que manejar toda la presentación. Será el profesor el que irá dando voz a los distintos miembros del equipo para que hablen sobre distintas cuestiones de su trabajo.
+
+Para generar esta presentación, sugiero proceder de la siguiente forma:
+
+#### 3.2.1 Creación de un guión para crear la presentación
+En una reunión presencial o virtual, los miembros del equipo deberán de preparar un guión para hacer la presentación. Sería interesante que previamente hubieran compartido entre todos los materiales preparados individualmente. 
+
+Esta actividad es mucho más profunda que la mera preparación de una presentación. Requiere un esfuerzo de síntesis alto ya que se trata de preparar unas instrucciones precisas para que una IA prepare una presentación. Además, deberá de ser un trabajo colaborativo en el que el grupo tendrá que conciliar las mejores contribuciones de cada uno de sus integrantes.
+
+A modo de ejemplo, comparto a continuación el guión que yo preparé para crear una presentación sobre gestión de pesquerías. Este material también está disponible en el guión mencionado anteriormente sobre "aprender en tiempos de IAs"
+
+#### 3.2.2 Creación de la presentación
+Una vez que el grupo tenga un guión detallado sobre el contenido de cada presentación, se subirá el texto resultante a un Notebook LM y se le pedirá a la IA que genere una presentación con esta fuente.
+
+El resultado obtenido puede ser modificado diapositiva a diapositiva con el editor que provee Notebook LM. También es posible usar otras herramientas IA para modificar las diapositivas o para crearlas. 
+
+## 4 Qué hay que entregar, cómo y cuándo
+Cada estudiante individual tendrá que entregar lo siguiente:
+
++ Un documento que contenga lo siguiente. Enviadlo por correo, por favor:
+
+  + Resumen de la información que haya considerado valiosa en su trabajo con las IAs y con información científica. Este documento no tiene que estar bien maquetado. Es un documento de trabajo y así tiene que ser.
+
+  + Lista de todos los enlaces a conversaciones con IA que haya usado, así como direcciones de webs consultadas.
+
+
++ Además, debe de compartir conmigo el Notebook LM que haya usado para subir todas las fuentes relevantes. Para que yo pueda ver todas las conversaciones, es importante que le des al botón de "convertir en nota" a las conversaciones que consideres relevantes. También os pido que pongáis vuestro nombre al principio del nombre del Notebook LM. Así podré identificaros. Compartid el Notebook con mi correo de gmail: fjbonet@gmail.com
+
+Cada grupo deberá de entregar a través del grupo de Teams lo siguiente:
+
++ Documento que contenga las instrucciones dadas a la IA para que genere la presentación.
++ Presentación usada en la exposición en clase.
 
 
 
 
 
-Las clases a impartir tendrán una duración de unos 40'. 
 
 
 
