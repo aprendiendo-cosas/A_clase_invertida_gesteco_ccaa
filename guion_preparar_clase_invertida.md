@@ -4,9 +4,9 @@
 > + **_Versión_**: 2025-2026
 > + **_Asignatura (grado)_**: Gestión de ecosistemas (CCAA)
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
-> + **Duración**: Estimo que uns 2 de trabajo individual y otras 2 en grupo. 
+> + **Duración**: Estimo que unas 2 de trabajo individual y otras 2 en grupo. 
 
-![portada](https://github.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/2025_2026/imagenes/portada.png)
+![portada](https://github.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/blob/main/imagenes/portada.png?raw=true)
 
 ---
 
@@ -46,35 +46,64 @@ Como la idea es describir las técnicas y métodos que utilizamos para gestionar
 ### 2.1 Objetivos de aprendizaje
 Esta sección introductoria deberá de explicitar qué pretendemos que aprendan nuestros alumnos con esta sesión. Estos objetivos de aprendizaje deberán ser un subconjunto de las cosas que el grupo haya aprendido preparando el tema en cuestión. Esta sección se suele preparar al final de todo el proceso porque para elaborarla es necesario completar los siguientes pasos. Aunque suene contradictorio, se prepara al final y se explica en primer lugar cuando se exponga el tema a la clase.
 
+
+
 ### 2.2 Definición y objetivos del ámbito de gestión con el que estamos trabajando
+
 Esta segunda sección se conecta con el propósito del ámbito de gestión que estamos estudiando. Los estudiantes que preparen cada tema deberán de cuestionarse por la razón de ser del mismo. Por ejemplo, ¿qué sentido tiene gestionar las especies amenazadas?. Identificar claramente los propósitos de gestión es muy importante para darle sentido al aprendizaje.
 
+
+
 ### 2.3 Fundamentos científicos que sustentan en la actualidad las herramientas de gestión en el ámbito estudiado
+
 Como podréis observar, vamos aterrizando poco a poco en las técnicas y métodos de manejo. En este bloque, los estudiantes deberán de analizar los fundamentos teóricos (ecológicos y de otras disciplinas) que sustentan los métodos de gestión que se aplican para el ámbito estudiado. Por ejemplo, para la gestión de pesquerías (este tema lo explicaré yo en clase) los fundamentos teóricos residen en la teoría de explotación de poblaciones ecológicas (lo vimos [aquí](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_explotacion_ecologia_ccaa/2025_2026/guion_explotacion_poblaciones.html) en ecología). En esta sección se deberán describir estas teorías y marcos conceptuales con detalle. Es recomendable hacer mención a los temas ya vistos en la asignatura de ecología.
 
+
+
 ### 2.4 Métodos y técnicas usadas actualmente en el ámbito temático asignado
+
 En paralelo a la descripción de los marcos conceptuales teóricos, irán surgiendo métodos y aproximaciones de gestión que se ponen en marcha en la actualidad para gestionar el tipo de recurso asignado. Así, por ejemplo, en el manejo de pesquerías, es muy común aplicar la metodología del *Rendimiento máximo sostenible* (esto también lo vimos en ecología). Pues bien, la idea es que identifiquéis los métodos más comúnmente utilizados para el ámbito temático que os haya tocado.
 
+
+
 ### 2.5 Breve historia del ámbito de gestión en cuestión.
+
 Esta sección puede parecer un poco particular. ¿Qué sentido tiene estudiar cómo han evolucionado las técnicas de manejo de la caza, por ejemplo?. Como veremos a lo largo de la asignatura, conocer la historia de un proceso nos da mucha información sobre cómo funciona en la actualidad. Además, estudiar cómo ha evolucionado un ámbito de gestión con el tiempo también nos da pistas sobre cómo aprendemos nosotros sobre ese ámbito. Es muy probable que nuestras ideas previas sobre cómo se gestiona, por ejemplo, la caza, se parezcan bastante a cómo nuestros ancestros gestionaban ese recurso. 
 
+
+
 ### 2.6 Marco legal en Europa, España y Andalucía
+
 La legislación es un elemento clave a la hora de estudiar cualquier ámbito de gestión de ecosistemas. Es en la legislación en la que se plasman las directrices y métodos de manejo. Es necesario hacer una breve revisión sobre las principales disposiciones legales que constituyen el cuerpo de conocimiento que tenemos sobre el ámbito de gestión asignado.
 
+
+
 ### 2.7 Ejemplos relevantes en nuestro entorno
+
 En esta ocasión se trata de identificar ejemplos sobre la gestión del ámbito temático asignado que resulten cercanos a nuestra escala de trabajo. La idea es describir estos ejemplos a la luz de lo aprendido anteriormente. Por ejemplo, si estamos estudiando la gestión de pesquerías, pues un buen ejemplo sería contar cómo funciona la flota pesquera de Andalucía y qué ejemplos de gestión (buena y mala) se ponen en práctica.
 
+
+
 ### 2.8 Retos relevantes que tenga el ámbito de gestión asignado
+
 Esta última dimensión pretende que los estudiantes reflexionen sobre lo aprendido y propongan retos a los que se enfrenta la metodología que han trabajado. Por ejemplo, podemos preguntarnos el papel que puede jugar el cambio climático en la gestión cinegética o tratar de identificar las carencias de informacion científica que tenemos para "resolver" el problema de las especies invasoras.
+
+
 
 ## 3 Metodología de trabajo y planteamiento pedagógico
 
 Este ejercicio tiene varias fases que combinan el trabajo individual con el grupal. Consta de varias fases en las que también se combinan distintas técnicas pedagógicas para maximizar el aprendizaje:
 
+
+
 ### 3.1 Trabajo individual
+
 Cada miembro del equipo tendrá que trabajar de manera individual abordando todos los ámbitos temáticos descritos en la sección anterior para el tema que le haya tocado. Para ello trabajará usando herramientas IA y literatura científica. Cada uno podrá usar el método que mejor considere. No obstante, yo os propongo la siguiente aproximación:
 
+
+
 #### 3.1.1 Conversación con IAs para recopilar información sobre cada ámbito de gestión
+
 Sugiero usar la opción *aprender paso a paso* de Gemini o la opción *Deep research* de Perplexity para aprender sobre el tema en cuestión. Recordad que en la interacción con las IAs es clave elaborar las preguntas que se hacen. No basta con pedir que genere contenido. Se trata de interactuar con la herramienta de forma que sus respuestas promuevan el aprendizaje. En la conversación con la IA se deben usar los elementos de interés descritos en la sección anterior (puntos 2.1 a 2.8). Pongo [aquí](https://aprendiendo-cosas.github.io/competencias_transversales/normas_IA/normas_IA.html) de nuevo el enlace a las normas de uso de IAs que ya trabajamos en el cuatrimestre pasado. 
 
 Las respuestas que vayan dando la IA deberán de ser cuestionadas por cada alumno individual. Sugiero proceder de dos maneras:
@@ -83,7 +112,9 @@ Las respuestas que vayan dando la IA deberán de ser cuestionadas por cada alumn
 + Además, sugiero que se cree un mapa mental o un documento en el que se vaya anotando la información que cada estudiante considere relevante. 
 
 
+
 #### 3.1.2 Interacción con IAs "contenerizadas" para afinar la información sobre eje analítico
+
 Una vez finalizada la primera fase de recopilación de información y aprendizaje general, sugiero que interactuéis con el Notebook que habéis creado antes para recopilar información más detallada sobre los distintos elementos de interés asociados al tema asignado. Es importante que guardéis como *nota* las respuestas que vaya dando el Notebook y que consideréis interesantes. Además, debéis seguir enriqueciendo el mapa mental o el documento de texto con las respuestas que dé el Notebook.
 
 Al final de esta fase individual, cada estudiante debe de tener en su cabeza (y en un mapa mental o un documento de texto) una idea bastante clara de cómo se gestiona el compartimento que se le haya asignado. 
@@ -92,26 +123,38 @@ Esta primera etapa combina la técnica de la clase invertida (porque el estudian
 
 Además, esta primera etapa está muy relacionada con la adquisición de habilidades de autoaprendizaje. Se trata, en definitiva, de aprender sobre algo casi totalmente nuevo en bastante poco tiempo. Para ayudar a los estudiantes a enfrentarse al "folio en blanco", he preparado este guión sobre cómo aprender en tiempos de la IA. El guión contiene un vídeo que muestra cómo aplicar el método propuesto a preparar una clase sobre gestión de pesquerías.
 
+
+
 ### 3.2 Trabajo en grupo
+
 Una vez que cada estudiante haya aprendido por sí mismo o misma los aspectos más relevantes del tema asignado, llega el momento de unificar saberes para generar una presentación compartida. Este es el objetivo de la fase de trabajo en grupo.
 
 La clase que tendrá que impartir el grupo deberá durar un máximo de 40'. Para hacer la presentación, el grupo tendrá que utilizar una presentación de diapositivas generada a través de una IA (a continuación se muestran detalles). Todos los miembros del equipo tendrán que manejar toda la presentación. Será el profesor el que irá dando voz a los distintos miembros del equipo para que hablen sobre distintas cuestiones de su trabajo.
 
 Para generar esta presentación, sugiero proceder de la siguiente forma:
 
+
+
 #### 3.2.1 Creación de un guión para crear la presentación
+
 En una reunión presencial o virtual, los miembros del equipo deberán de preparar un guión para hacer la presentación. Sería interesante que previamente hubieran compartido entre todos los materiales preparados individualmente. 
 
 Esta actividad es mucho más profunda que la mera preparación de una presentación. Requiere un esfuerzo de síntesis alto ya que se trata de preparar unas instrucciones precisas para que una IA prepare una presentación. Además, deberá de ser un trabajo colaborativo en el que el grupo tendrá que conciliar las mejores contribuciones de cada uno de sus integrantes.
 
 A modo de ejemplo, comparto a continuación el guión que yo preparé para crear una presentación sobre gestión de pesquerías. Este material también está disponible en el guión mencionado anteriormente sobre "aprender en tiempos de IAs"
 
+
+
 #### 3.2.2 Creación de la presentación
+
 Una vez que el grupo tenga un guión detallado sobre el contenido de cada presentación, se subirá el texto resultante a un Notebook LM y se le pedirá a la IA que genere una presentación con esta fuente.
 
 El resultado obtenido puede ser modificado diapositiva a diapositiva con el editor que provee Notebook LM. También es posible usar otras herramientas IA para modificar las diapositivas o para crearlas. 
 
+
+
 ## 4 Qué hay que entregar, cómo y cuándo
+
 Cada estudiante individual tendrá que entregar lo siguiente:
 
 + Un documento que contenga lo siguiente. Enviadlo por correo, por favor:
