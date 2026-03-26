@@ -6,7 +6,7 @@
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
 > + **Duración**: Estimo que unas 2 de trabajo individual y otras 2 en grupo. 
 
-![portada](https://github.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/blob/main/imagenes/portada.png?raw=true)
+![portada](https://raw.githubusercontent.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/2025_2026/imagenes/portada.png)
 
 ---
 
@@ -153,7 +153,19 @@ El resultado obtenido puede ser modificado diapositiva a diapositiva con el edit
 
 
 
-## 4 Qué hay que entregar, cómo y cuándo
+## 4 Vídeo explicativo y material de apoyo
+
+El siguiente vídeo muestra en tiempo real lo que yo hice para preparar la sesión sobre gestión de pesquerías. Es un vídeo largo. He puesto capítulos y no me ofenderé si lo escucháis a más velocidad. Podéis reiros de mi voz :)
+
+
+
+
+
+Además, [aquí](https://raw.githubusercontent.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/2025_2026/descargables/notas_gestion_pesquerias.docx) podéis descargar el texto que usé para anotar lo que me iba contestando la IA. Y aquí el que yo creé a partir del anterior con instrucciones para generar las diapositivas. 
+
+
+
+## 5 Qué hay que entregar, cómo y cuándo
 
 Cada estudiante individual tendrá que entregar lo siguiente:
 
