@@ -161,7 +161,7 @@ El siguiente vídeo muestra en tiempo real lo que yo hice para preparar la sesi�
 
 
 
-Además, [aquí](https://raw.githubusercontent.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/2025_2026/descargables/notas_gestion_pesquerias.docx) podéis descargar el texto que usé para anotar lo que me iba contestando la IA. Y aquí el que yo creé a partir del anterior con instrucciones para generar las diapositivas. 
+Además, [aquí](https://raw.githubusercontent.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/2025_2026/descargables/notas_gestion_pesquerias.docx) podéis descargar el texto que usé para anotar lo que me iba contestando la IA. Y [aquí](https://raw.githubusercontent.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/2025_2026/descargables/notas_gestion_pesquerias_presentacion.docx) el que yo creé a partir del anterior con instrucciones para generar las diapositivas. 
 
 
 
