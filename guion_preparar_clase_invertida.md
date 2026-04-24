@@ -4,9 +4,9 @@
 > + **_Versión_**: 2025-2026
 > + **_Asignatura (grado)_**: Gestión de ecosistemas (CCAA)
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
-> + **Duración**: Estimo que unas 2 de trabajo individual y otras 2 en grupo. 
+> + **Duración**: Estimo que unas 4 de trabajo individual. 
 
-![portada](https://raw.githubusercontent.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/2025_2026/imagenes/portada.png)
+![portada](https://raw.githubusercontent.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/2025-2026/imagenes/portada.png)
 
 ---
 
@@ -92,17 +92,11 @@ Esta última dimensión pretende que los estudiantes reflexionen sobre lo aprend
 
 ## 3 Metodología de trabajo y planteamiento pedagógico
 
-Este ejercicio tiene varias fases que combinan el trabajo individual con el grupal. Consta de varias fases en las que también se combinan distintas técnicas pedagógicas para maximizar el aprendizaje:
+Consta de varias fases en las que se combinan distintas técnicas pedagógicas para maximizar el aprendizaje:
 
 
 
-### 3.1 Trabajo individual
-
-Cada miembro del equipo tendrá que trabajar de manera individual abordando todos los ámbitos temáticos descritos en la sección anterior para el tema que le haya tocado. Para ello trabajará usando herramientas IA y literatura científica. Cada uno podrá usar el método que mejor considere. No obstante, yo os propongo la siguiente aproximación:
-
-
-
-#### 3.1.1 Conversación con IAs para recopilar información sobre cada ámbito de gestión
+### 3.1 Conversación con IAs para recopilar información sobre cada ámbito de gestión
 
 Sugiero usar la opción *aprender paso a paso* de Gemini o la opción *Deep research* de Perplexity para aprender sobre el tema en cuestión. Recordad que en la interacción con las IAs es clave elaborar las preguntas que se hacen. No basta con pedir que genere contenido. Se trata de interactuar con la herramienta de forma que sus respuestas promuevan el aprendizaje. En la conversación con la IA se deben usar los elementos de interés descritos en la sección anterior (puntos 2.1 a 2.8). Pongo [aquí](https://aprendiendo-cosas.github.io/competencias_transversales/normas_IA/normas_IA.html) de nuevo el enlace a las normas de uso de IAs que ya trabajamos en el cuatrimestre pasado. 
 
@@ -113,41 +107,17 @@ Las respuestas que vayan dando la IA deberán de ser cuestionadas por cada alumn
 
 
 
-#### 3.1.2 Interacción con IAs "contenerizadas" para afinar la información sobre eje analítico
-
+### 3.2 Interacción con IAs "contenerizadas" para afinar la información sobre eje analítico
 Una vez finalizada la primera fase de recopilación de información y aprendizaje general, sugiero que interactuéis con el Notebook que habéis creado antes para recopilar información más detallada sobre los distintos elementos de interés asociados al tema asignado. Es importante que guardéis como *nota* las respuestas que vaya dando el Notebook y que consideréis interesantes. Además, debéis seguir enriqueciendo el mapa mental o el documento de texto con las respuestas que dé el Notebook.
 
-Al final de esta fase individual, cada estudiante debe de tener en su cabeza (y en un mapa mental o un documento de texto) una idea bastante clara de cómo se gestiona el compartimento que se le haya asignado. 
+Al final de esta fase, cada estudiante debe de tener en su cabeza (y en un mapa mental o un documento de texto) una idea bastante clara de cómo se gestiona el compartimento que se le haya asignado. 
 
-Esta primera etapa combina la técnica de la clase invertida (porque el estudiante prepara material que tendrá que exponer más tarde) con el aprendizaje autorregulado apoyado por IA como "copiloto". El hecho de que haya unos ejes analíticos que orientan la búsqueda de material por parte del estudiante se enmarca en la técnica docente del andamiaje cognitivo.
-
-Además, esta primera etapa está muy relacionada con la adquisición de habilidades de autoaprendizaje. Se trata, en definitiva, de aprender sobre algo casi totalmente nuevo en bastante poco tiempo. Para ayudar a los estudiantes a enfrentarse al "folio en blanco", he preparado este guión sobre cómo aprender en tiempos de la IA. El guión contiene un vídeo que muestra cómo aplicar el método propuesto a preparar una clase sobre gestión de pesquerías.
-
+### 3.3 Creación de un guión para crear la presentación
+Las notas generadas anteriormente deberán servir para crear un guión con el que se hará una presentación automáticamente usando Notebook LM. Este guión contendrá unas instrucciones claras sobre qué deberá contener cada diapositiva. Será utilizado por la IA para generar el documento gráfico. 
 
 
-### 3.2 Trabajo en grupo
-
-Una vez que cada estudiante haya aprendido por sí mismo o misma los aspectos más relevantes del tema asignado, llega el momento de unificar saberes para generar una presentación compartida. Este es el objetivo de la fase de trabajo en grupo.
-
-La clase que tendrá que impartir el grupo deberá durar un máximo de 40'. Para hacer la presentación, el grupo tendrá que utilizar una presentación de diapositivas generada a través de una IA (a continuación se muestran detalles). Todos los miembros del equipo tendrán que manejar toda la presentación. Será el profesor el que irá dando voz a los distintos miembros del equipo para que hablen sobre distintas cuestiones de su trabajo.
-
-Para generar esta presentación, sugiero proceder de la siguiente forma:
-
-
-
-#### 3.2.1 Creación de un guión para crear la presentación
-
-En una reunión presencial o virtual, los miembros del equipo deberán de preparar un guión para hacer la presentación. Sería interesante que previamente hubieran compartido entre todos los materiales preparados individualmente. 
-
-Esta actividad es mucho más profunda que la mera preparación de una presentación. Requiere un esfuerzo de síntesis alto ya que se trata de preparar unas instrucciones precisas para que una IA prepare una presentación. Además, deberá de ser un trabajo colaborativo en el que el grupo tendrá que conciliar las mejores contribuciones de cada uno de sus integrantes.
-
-A modo de ejemplo, comparto a continuación el guión que yo preparé para crear una presentación sobre gestión de pesquerías. Este material también está disponible en el guión mencionado anteriormente sobre "aprender en tiempos de IAs"
-
-
-
-#### 3.2.2 Creación de la presentación
-
-Una vez que el grupo tenga un guión detallado sobre el contenido de cada presentación, se subirá el texto resultante a un Notebook LM y se le pedirá a la IA que genere una presentación con esta fuente.
+### 3.4 Creación de la presentación
+Cuando tengas un guión detallado sobre el contenido de cada presentación, se subirá el texto resultante a un Notebook LM y se le pedirá a la IA que genere una presentación con esta fuente.
 
 El resultado obtenido puede ser modificado diapositiva a diapositiva con el editor que provee Notebook LM. También es posible usar otras herramientas IA para modificar las diapositivas o para crearlas. 
 
@@ -161,27 +131,28 @@ El siguiente vídeo muestra en tiempo real lo que yo hice para preparar la sesi�
 
 
 
-Además, [aquí](https://raw.githubusercontent.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/2025_2026/descargables/notas_gestion_pesquerias.docx) podéis descargar el texto que usé para anotar lo que me iba contestando la IA. Y [aquí](https://raw.githubusercontent.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/2025_2026/descargables/notas_gestion_pesquerias_presentacion.docx) el que yo creé a partir del anterior con instrucciones para generar las diapositivas. 
+Además, [aquí](https://raw.githubusercontent.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/2025-2026/descargables/notas_gestion_pesquerias.docx) podéis descargar el texto que usé para anotar lo que me iba contestando la IA. Y [aquí](https://raw.githubusercontent.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/2025-2026/descargables/notas_gestion_pesquerias_presentacion.docx) el que yo creé a partir del anterior con instrucciones para generar las diapositivas. 
 
 
 
 ## 5 Qué hay que entregar, cómo y cuándo
 
-Cada estudiante individual tendrá que entregar lo siguiente:
+Cada estudiante tendrá que entregar lo siguiente:
 
-+ Un documento que contenga lo siguiente. Enviadlo por correo, por favor:
++ Un documento de texto que contenga lo siguiente:
 
   + Resumen de la información que haya considerado valiosa en su trabajo con las IAs y con información científica. Este documento no tiene que estar bien maquetado. Es un documento de trabajo y así tiene que ser.
 
   + Lista de todos los enlaces a conversaciones con IA que haya usado, así como direcciones de webs consultadas.
+  
+  + El guión que has usado para pedirle a la IA que haga la presentación.
 
 
-+ Además, debe de compartir conmigo el Notebook LM que haya usado para subir todas las fuentes relevantes. Para que yo pueda ver todas las conversaciones, es importante que le des al botón de "convertir en nota" a las conversaciones que consideres relevantes. También os pido que pongáis vuestro nombre al principio del nombre del Notebook LM. Así podré identificaros. Compartid el Notebook con mi correo de gmail: fjbonet@gmail.com
++ Además, debes de compartir conmigo el Notebook LM que haya usado para subir todas las fuentes relevantes. Para que yo pueda ver todas las conversaciones, es importante que le des al botón de "convertir en nota" a las conversaciones que consideres relevantes. También os pido que pongáis vuestro nombre al principio del nombre del Notebook LM. Así podré identificaros. Compartid el Notebook con mi correo de gmail: fjbonet@gmail.com
 
-Cada grupo deberá de entregar a través del grupo de Teams lo siguiente:
++ La presentación que hayas creado con la IA sobre el tema asignado. 
 
-+ Documento que contenga las instrucciones dadas a la IA para que genere la presentación.
-+ Presentación usada en la exposición en clase.
+Todo lo anterior se entregará comprimido en un archivo zip a través de este enlace del Moodle. La fecha de entrega será el 20 de mayo a las 23:59. Al día siguiente yo subiré al Moodle un resumen de lo que habéis enviado para que podáis estudiarlo para el examen.
 
 
 
@@ -189,7 +160,7 @@ Cada grupo deberá de entregar a través del grupo de Teams lo siguiente:
 
 ****
 
-[Aquí](https://github.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/archive/refs/tags/2025_2026.zip) puedes descargar un archivo .zip que contiene este guión en formato html y todo el material que incluye.
+[Aquí](https://github.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/archive/refs/tags/2025-2026.zip) puedes descargar un archivo .zip que contiene este guión en formato html y todo el material que incluye.
 
 ****
 Haz click [aquí](https://github.com/aprendiendo-cosas/A_clase_invertida_gesteco_ccaa/releases) para ver cómo ha cambiado este guión en los distintos cursos académicos.
